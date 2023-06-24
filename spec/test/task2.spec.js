@@ -53,12 +53,12 @@ describe('Here Testing User', function() {
 
     it('should return true if payment is verified', function() {
       paymentModel.isVerify.and.returnValue(true);
-    expect(user.y(paymentModel)).toBeTrue();
+    expect(user.verificationPayment(paymentModel)).toBeTrue();
     });
 
     it('should return false if payment is not verified', function() {
       paymentModel.isVerify.and.returnValue(false);
-        expect(user.y(paymentModel)).toBeFalse();
+        expect(user.verificationPayment(paymentModel)).toBeFalse();
     });
   });
 });
