@@ -30,7 +30,7 @@ describe('Here Testing User', function() {
       };
       user.addToCart(productOne);
       user.addToCart(productTwo);
-      expect(user.calculateTotalCartPrice()).toBe(300);
+      expect(user.TotalPrice()).toBe(300);
     });
   });
 
